@@ -12,6 +12,7 @@ import register from "../pages/register";
 import premium from "../pages/premium";
 import agenda from "../pages/agenda";
 import configuracoes from "../pages/configuracao/configuracoes";
+import aparencia from "../pages/configuracao/aparencia";
 import perfilPP from "../pages/perfilPP";
 
 const Stack = createNativeStackNavigator();
@@ -47,6 +48,7 @@ export default function Routes() {
       <Stack.Screen name="register" component={register} />
       <Stack.Screen name="agenda" component={agenda} />
       <Stack.Screen name="perfilPP" component={perfilPP} />
+      <Stack.Screen name="aparencia" component={aparencia} />
     </Stack.Navigator>
   );
 
