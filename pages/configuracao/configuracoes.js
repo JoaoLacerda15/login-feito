@@ -4,16 +4,10 @@ import { Ionicons, MaterialIcons, MaterialCommunityIcons } from "@expo/vector-ic
 export default function Configuracoes({ navigation }) {
   const menuItems = [
     { id: 1, icon: "moon-outline", iconSet: "Ionicons", label: "Aparência", route: "aparencia" },
-    { id: 2, icon: "notifications-outline", iconSet: "Ionicons", label: "Notificações", route: "notification" },
+    { id: 2, icon: "notifications-outline", iconSet: "Ionicons", label: "Notificações", route: "notificacao" },
     { id: 3, icon: "language", iconSet: "Ionicons", label: "Idioma", route: "Idioma" },
-    {
-      id: 4,
-      icon: "alert-circle-outline",
-      iconSet: "Ionicons",
-      label: "Contatos Bloqueados",
-      route: "ContatosBloqueados",
-    },
-    { id: 5, icon: "apps", iconSet: "MaterialIcons", label: "Permições do aplicativo", route: "Permicoes" },
+    { id: 4, icon: "alert-circle-outline", iconSet: "Ionicons", label: "Contatos Bloqueados", route: "ContatosBloqueados" },
+    { id: 5, icon: "apps", iconSet: "MaterialIcons", label: "Permissões do aplicativo", route: "permissoes" },
     { id: 6, icon: "grid", iconSet: "Ionicons", label: "Acessibilidade", route: "acessibilidade" },
     { id: 7, icon: "logo-usd", iconSet: "Ionicons", label: "Assinatura", route: "premium" },
     { id: 8, icon: "people-outline", iconSet: "Ionicons", label: "Mudar de conta", route: "MudarConta" },

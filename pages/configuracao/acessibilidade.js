@@ -1,12 +1,13 @@
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, SafeAreaView, StatusBar } from "react-native"
 import { Ionicons, MaterialIcons, MaterialCommunityIcons } from "@expo/vector-icons"
 
-export default function Aparencia({ navigation }) {
+export default function Acessibilidade({ navigation }) {
   const menuItems = [
-    { id: 1, icon: "moon-outline", iconSet: "Ionicons", label: "Tema do aplicativo", route: "aparencia" },
-    { id: 2, icon: "notifications-outline", iconSet: "Ionicons", label: "Fonte", route: "notification" },
-    { id: 3, icon: "language", iconSet: "Ionicons", label: "Tamanho da interface", route: "Idioma" },
-    
+    { id: 1, icon: "moon-outline", iconSet: "Ionicons", label: "Tamanho da fonte", route: "aparencia" },
+    { id: 2, icon: "notifications-outline", iconSet: "Ionicons", label: "Contraste e cores", route: "notification" },
+    { id: 3, icon: "language", iconSet: "Ionicons", label: "Leitura em voz alta", route: "Idioma" },
+    { id: 4, icon: "alert-circle-outline", iconSet: "Ionicons", label: "Reduzir movimento e efeitos", route: "ContatosBloqueados" },
+    { id: 5, icon: "apps", iconSet: "MaterialIcons", label: "Modo simplificado", route: "Permissoes" },
   ]
 
   const handleMenuPress = (route) => {
@@ -33,7 +34,7 @@ export default function Aparencia({ navigation }) {
         <TouchableOpacity style={styles.backButton} onPress={() => navigation?.goBack()}>
           <Ionicons name="arrow-back" size={24} color="#000" />
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>Aparência</Text>
+        <Text style={styles.headerTitle}>acessibilidade</Text>
         <View style={styles.placeholder} />
       </View>
 
