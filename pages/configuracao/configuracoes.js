@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, SafeAreaView, StatusBar } from "react-native"
 import { Ionicons, MaterialIcons, MaterialCommunityIcons } from "@expo/vector-icons"
 
-export default function configuracoes({ navigation }) {
+export default function Configuracoes({ navigation }) {
   const menuItems = [
     { id: 1, icon: "moon-outline", iconSet: "Ionicons", label: "Aparência", route: "Aparencia" },
     { id: 2, icon: "notifications-outline", iconSet: "Ionicons", label: "Notificações", route: "notification" },

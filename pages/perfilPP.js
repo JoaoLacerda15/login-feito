@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 
-export default function perfilPP() {
+export default function PerfilPP() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
