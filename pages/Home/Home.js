@@ -1,3 +1,4 @@
+//teste
 import React, { useState, useRef } from "react";
 import {
   ScrollView,
@@ -67,7 +68,7 @@ export default function Home() {
   // Cada item do menu leva a uma tela diferente
   const menuItems = [
     { label: "Configuração", icon: "settings", route: "configuracoes" },
-    { label: "Histórico", icon: "history", route: "Historico" },
+    { label: "Histórico", icon: "history", route: "login" },
     { label: "Estatísticas", icon: "bar-chart", route: "Estatisticas" },
     { label: "Premium", icon: "star", route: "premium" },
     { label: "Favoritos", icon: "favorite", route: "Favoritos" },
