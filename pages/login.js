@@ -1,14 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { View, Text, TextInput, Button, Alert, StyleSheet } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import AuthService from "../services/authService";
 
 const auth = new AuthService();
 
 export default function LoginScreen() {
   const navigation = useNavigation();
+  const route = useRoute(); // Para receber parâmetros de navegação
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  useEffect(() => {
+    if (route.params?.message) {
+      Alert.alert("Sucesso", route.params.message);
+    }
+  }, [route.params]);
 
   const handleLogin = async () => {
     try {
