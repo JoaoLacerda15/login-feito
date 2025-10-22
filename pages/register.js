@@ -71,8 +71,8 @@ export default function RegisterScreen() {
         tags: workerTags,
       });
 
-      Alert.alert("Sucesso", "Cadastro realizado!");
-      navigation.goBack();
+      // Navega para Login e envia mensagem
+      navigation.navigate("login", { message: "Cadastro realizado!" });
     } catch (e) {
       Alert.alert("Erro", e.message);
     }
@@ -98,7 +98,9 @@ export default function RegisterScreen() {
         onChangeText={setPassword}
       />
 
-<TextInput
+      {userType === "trabalhador" && (
+        <>
+          <TextInput
             style={styles.input}
             placeholder="CPF"
             keyboardType="numeric"
@@ -113,26 +115,6 @@ export default function RegisterScreen() {
             value={cep}
             onChangeText={setCep}
           />
-
-      {/* Tipo de usuário */}
-      <View style={styles.dropdownContainer}>
-        <TouchableOpacity
-          style={[styles.option, userType === "comum" && styles.optionSelected]}
-          onPress={() => setUserType("comum")}
-        >
-          <Text>Usuário Comum</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          style={[styles.option, userType === "trabalhador" && styles.optionSelected]}
-          onPress={() => setUserType("trabalhador")}
-        >
-          <Text>Trabalhador</Text>
-        </TouchableOpacity>
-      </View>
-
-      {userType === "trabalhador" && (
-        <>
 
           <View style={styles.tagsContainer}>
             {allTags.map(tag => {
@@ -150,6 +132,23 @@ export default function RegisterScreen() {
           </View>
         </>
       )}
+
+      {/* Tipo de usuário */}
+      <View style={styles.dropdownContainer}>
+        <TouchableOpacity
+          style={[styles.option, userType === "comum" && styles.optionSelected]}
+          onPress={() => setUserType("comum")}
+        >
+          <Text>Usuário Comum</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={[styles.option, userType === "trabalhador" && styles.optionSelected]}
+          onPress={() => setUserType("trabalhador")}
+        >
+          <Text>Trabalhador</Text>
+        </TouchableOpacity>
+      </View>
 
       <Button title="Cadastrar" onPress={handleRegister} />
     </ScrollView>
