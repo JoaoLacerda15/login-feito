@@ -15,6 +15,7 @@ import configuracoes from "../pages/configuracao/configuracoes";
 import aparencia from "../pages/configuracao/aparencia";
 import notificacao from "../pages/configuracao/notificacao";
 import permissoes from "../pages/configuracao/permissoes";
+import conta from "../pages/configuracao/conta";
 import perfilPP from "../pages/perfilPP";
 
 const Stack = createNativeStackNavigator();
@@ -53,6 +54,7 @@ export default function Routes() {
       <Stack.Screen name="aparencia" component={aparencia} />
       <Stack.Screen name="notificacao" component={notificacao} />
       <Stack.Screen name="permissoes" component={permissoes} />
+      <Stack.Screen name="conta" component={conta} />
     </Stack.Navigator>
   );
 

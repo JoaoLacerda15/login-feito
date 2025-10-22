@@ -10,7 +10,7 @@ export default function Configuracoes({ navigation }) {
     { id: 5, icon: "apps", iconSet: "MaterialIcons", label: "Permissões do aplicativo", route: "permissoes" },
     { id: 6, icon: "grid", iconSet: "Ionicons", label: "Acessibilidade", route: "acessibilidade" },
     { id: 7, icon: "logo-usd", iconSet: "Ionicons", label: "Assinatura", route: "premium" },
-    { id: 8, icon: "people-outline", iconSet: "Ionicons", label: "Mudar de conta", route: "MudarConta" },
+    { id: 8, icon: "people-outline", iconSet: "Ionicons", label: "Mudar de conta", route: "conta" },
     { id: 9, icon: "chatbox-outline", iconSet: "Ionicons", label: "Enviar feedback", route: "Feedback" },
     { id: 10, icon: "information-circle-outline", iconSet: "Ionicons", label: "Sobre", route: "Sobre" },
     { id: 11, icon: "refresh-outline", iconSet: "Ionicons", label: "Restaurar padrão", route: "RestaurarPadrao" },

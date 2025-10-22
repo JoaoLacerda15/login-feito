@@ -71,7 +71,7 @@ export default function Home() {
     { label: "Histórico", icon: "history", route: "login" },
     { label: "Estatísticas", icon: "bar-chart", route: "Estatisticas" },
     { label: "Premium", icon: "star", route: "premium" },
-    { label: "Favoritos", icon: "favorite", route: "Favoritos" },
+    { label: "Favoritos", icon: "favorite", route: "notification" },
     { label: "Gerenciar Perfil", icon: "manage-accounts", route: "perfilPP" },
   ];
 
@@ -88,7 +88,7 @@ export default function Home() {
 
           {/* Botão do sino que abre o menu lateral */}
           <TouchableOpacity onPress={toggleMenu}>
-            <Icon name="notifications" size={26} color="black" />
+            <Icon name="settings" size={26} color="black" />
           </TouchableOpacity>
         </View>
 

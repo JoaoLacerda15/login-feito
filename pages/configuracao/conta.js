@@ -1,12 +1,10 @@
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, SafeAreaView, StatusBar } from "react-native"
 import { Ionicons, MaterialIcons, MaterialCommunityIcons } from "@expo/vector-icons"
 
-export default function Aparencia({ navigation }) {
+export default function Conta({ navigation }) {
   const menuItems = [
-    { id: 1, icon: "sunny", iconSet: "Ionicons", label: "Tema do aplicativo", route: "aparencia" },
-    { id: 2, icon: "pencil", iconSet: "Ionicons", label: "Fonte", route: "notification" },
-    { id: 3, icon: "language", iconSet: "Ionicons", label: "Tamanho da interface", route: "Idioma" },
-    
+    { id: 1, icon: "notifications-outline", iconSet: "Ionicons", label: "Sair da conta", route: "login" },
+    { id: 2, icon: "language", iconSet: "Ionicons", label: "Excluir conta", route: "Idioma" },
   ]
 
   const handleMenuPress = (route) => {
@@ -33,10 +31,9 @@ export default function Aparencia({ navigation }) {
         <TouchableOpacity style={styles.backButton} onPress={() => navigation?.goBack()}>
           <Ionicons name="arrow-back" size={24} color="#000" />
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>Aparência</Text>
+        <Text style={styles.headerTitle}>Conta</Text>
         <View style={styles.placeholder} />
       </View>
-
 
       {/* Content */}
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
